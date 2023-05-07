@@ -74,6 +74,8 @@ h1 {
 .chatList li.m-txt span.me {
   font-weight: bold;
   color: red;
+  display: flex;
+  justify-content: flex-end;
 }
 .userList {
   width: 200px;

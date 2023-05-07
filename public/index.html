@@ -14,7 +14,12 @@
     </div>
     <div class="page" id="chatPage">
       <div class="chatArea">
-        <ul class="chatList"></ul>
+        <ul class="chatList">
+          <li class="m-status">entrou na sala</li>
+          <li class="m-status">saiu da sala</li>
+          <li class="m-txt"><span class="me">bmalkes :</span> Hello ??</li>
+          <li class="m-txt"><span>Paulo :</span> Tudo com vc?</li>
+        </ul>
         <ul class="userList"></ul>
       </div>
       <div class="chatInput">
@@ -26,5 +31,6 @@
       </div>
     </div>
   </body>
-  <script src="index.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
 </html>

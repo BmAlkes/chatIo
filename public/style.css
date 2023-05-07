@@ -22,7 +22,7 @@ h1 {
 }
 
 #loginPage {
-  display: none;
+  display: flex;
 }
 
 #loginNameInput {
@@ -36,7 +36,7 @@ h1 {
 }
 
 #chatPage {
-  display: flex;
+  display: none;
 }
 
 .chatArea {
@@ -48,10 +48,43 @@ h1 {
 .chatList {
   flex: 1;
   background: #fff;
+  overflow-y: scroll;
+  max-height: calc(100vh - 40px);
+}
+
+.chatList li {
+  padding: 3px;
+  font-size: 1rem;
+}
+
+.chatList li.m-status {
+  color: #333;
+  font-style: italic;
+}
+.chatList li.m-txt {
+  padding: 10px;
+  background-color: #ccc;
+  margin: 5px;
+  border-radius: 7px;
+}
+.chatList li.m-txt span {
+  font-weight: bold;
+  color: #286e30;
+}
+.chatList li.m-txt span.me {
+  font-weight: bold;
+  color: red;
 }
 .userList {
   width: 200px;
   background: #ccc;
+  overflow-y: scroll;
+  max-height: calc(100vh - 40px);
+}
+
+.userList li {
+  padding: 5px;
+  font-size: 1.4rem;
 }
 
 .chatInput {
